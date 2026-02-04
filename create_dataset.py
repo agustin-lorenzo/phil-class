@@ -49,7 +49,7 @@ def create_series(file, label, entry_size):
     all_entries.extend(entries)
     all_labels.extend([label] * num_entries)
 
-phils = ["absurdism", "epicureanism", "existentialism", "stoicism", "utilitarianism"]
+phils = ["existentialism", "nihilism", "stoicism", "utilitarianism"]
 for p in phils:
     create_series(f"data/{p}.txt", p, 300)
 

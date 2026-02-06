@@ -37,7 +37,7 @@ def create_entries(file, entry_size=300):
 all_entries = []
 all_labels = []
 
-def create_series(file, label, entry_size):
+def create_series(file, label, entry_size=30):
     """
     Adds all entires and their labels to lists used later for saving dataset
     
@@ -51,7 +51,7 @@ def create_series(file, label, entry_size):
 
 phils = ["existentialism", "nihilism", "stoicism", "utilitarianism"]
 for p in phils:
-    create_series(f"data/{p}.txt", p, 300)
+    create_series(f"data/{p}.txt", p, 30)
 
 df = pd.DataFrame({
     "text": all_entries,
